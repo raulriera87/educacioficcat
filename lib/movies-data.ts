@@ -28,12 +28,12 @@ export type Category = {
 export const categories: Category[] = [
   { id: "drama", label: "Drama", icon: "theater", color: "bg-muted text-primary-foreground" },
   { id: "comedia", label: "Comedia", icon: "laugh", color: "bg-muted text-accent-foreground" },
-  { id: "documental", label: "Documental", icon: "camera", color: "bg-secondary text-secondary-foreground" },
-  { id: "ciencia-ficcio", label: "Ciencia Ficcio", icon: "rocket", color: "bg-chart-5 text-primary-foreground" },
-  { id: "musical", label: "Musical", icon: "music", color: "bg-primary text-primary-foreground" },
-  { id: "historic", label: "Historic", icon: "landmark", color: "bg-chart-2 text-primary-foreground" },
-  { id: "thriller", label: "Thriller", icon: "eye", color: "bg-chart-1 text-primary-foreground" },
-  { id: "western", label: "Western", icon: "star", color: "bg-accent text-accent-foreground" },
+  { id: "documental", label: "Documental", icon: "camera", color: "bg-muted text-primary-foreground" },
+  { id: "ciencia-ficcio", label: "Ciencia Ficcio", icon: "rocket", color: "bg-muted text-primary-foreground" },
+  { id: "musical", label: "Musical", icon: "music", color: "bg-muted text-primary-foreground" },
+  { id: "historic", label: "Historic", icon: "landmark", color: "bg-muted text-primary-foreground" },
+  { id: "thriller", label: "Thriller", icon: "eye", color: "bg-muted text-primary-foreground" },
+  { id: "western", label: "Western", icon: "star", color: "bg-muted text-primary-foreground" },
 ]
 
 function slugify(text: string): string {
@@ -652,7 +652,7 @@ export function getAgeColor(qualificacio: string): string {
 export function getNivellColor(nivell: string): string {
   if (nivell.toLowerCase().includes("primaria")) return "bg-muted text-muted-foreground"
   if (nivell.toLowerCase().includes("secundaria")) return "bg-muted text-muted-foreground"
-  if (nivell.toLowerCase().includes("post")) return "bg-chart-5 text-primary-foreground"
+  if (nivell.toLowerCase().includes("post")) return "bg-muted text-primary-foreground"
   return "bg-muted text-muted-foreground"
 }
 

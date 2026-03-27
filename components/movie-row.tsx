@@ -20,7 +20,7 @@ export function MovieRow({ title, movies, size = "medium" }: MovieRowProps) {
           <ChevronRight className="w-4 h-4" />
         </button>
       </div>
-      <div className="flex gap-4 overflow-x-auto scrollbar-hide px-4 lg:px-8 pb-2">
+      <div className="flex gap-4 overflow-x-auto scrollbar-hide py-2 pt-4 pb-6 lg:px-8">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} size={size} />
         ))}
